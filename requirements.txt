@@ -1,0 +1,4 @@
+blessed>=1.20.0
+colorama>=0.4.6
+# Untuk suara opsional, bisa tambahkan:
+# pygame>=2.5.0
