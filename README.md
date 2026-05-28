@@ -1,4 +1,6 @@
-## ZENITH TIME OS TERMINAL V2
+## ⏰️ ZENITH TIME OS V2
+
+Sebuah alat terminal imersif yang mengubah sesi CLI biasa menjadi dashboard futuristik penuh layar. Dirancang dengan estetika retro‑themes dan animasi sinematik, aplikasi ini membawa empat alat esensial langsung ke terminal Anda :
 
 - **Digital Clock** — 12/24 jam, efek *glow*, tanggal, animasi berkedip, mode fullscreen.
 - **Alarm** — Atur beberapa alarm, *snooze*, notifikasi suara + efek berkedip terminal.
@@ -18,29 +20,29 @@
 - **pip** (manajer paket Python)
 - **Terminal dengan dukungan warna 256** (Windows Terminal, GNOME Terminal, Termux, dll.)
 
-### 1️⃣ Linux (Ubuntu / Xubuntu / Kali Linux)
+## 1️⃣ Linux (Ubuntu / Xubuntu / Kali Linux)
 
 **Langkah 1:** Clone repositori
 ```bash
 git clone https://github.com/123tool/ZENITH-TIME-OS-V2.git
 cd ZENITH-TIME-OS-V2
 ```
-Langkah 2: Jalankan installer otomatis
+**Langkah 2:** Jalankan installer otomatis
 
 ```bash
 chmod +x install.sh
 bash install.sh
 ```
 
-Installer akan mendeteksi OS, menginstal Python jika belum ada, lalu menginstal dependensi.
+*Installer akan mendeteksi OS, menginstal Python jika belum ada, lalu menginstal dependensi.*
 
-Langkah 3: Luncurkan aplikasi
+**Langkah 3:** Luncurkan aplikasi
 
 ```bash
 bash start.sh
 ```
 
-Alternatif manual (jika installer gagal):
+**Alternatif manual (jika installer gagal):**
 
 ```bash
 sudo apt update
@@ -51,71 +53,71 @@ python3 main.py
 
 ---
 
-2️⃣ Windows (CMD / PowerShell / Windows Terminal)
+## 2️⃣ Windows (CMD / PowerShell / Windows Terminal)
 
-Langkah 1: Pastikan Python sudah terinstal.
+**Langkah 1:** Pastikan Python sudah terinstal.
 
 · Unduh dari python.org (centang Add Python to PATH).
 · Buka Command Prompt atau PowerShell.
 
-Langkah 2: Clone atau unduh repositori, lalu masuk ke folder.
+**Langkah 2:** Clone atau unduh repositori, lalu masuk ke folder.
 
 ```powershell
-git clone https://github.com/username/terminal-tools-suite.git
-cd terminal-tools-suite
+git clone https://github.com/123tool/ZENITH-TIME-OS-V2.git
+cd ZENITH-TIME-OS-V2
 ```
 
-Langkah 3: Instal dependensi.
+**Langkah 3:** Instal dependensi.
 
 ```powershell
 pip install -r requirements.txt
 ```
 
-Langkah 4: Jalankan aplikasi.
+**Langkah 4:** Jalankan aplikasi.
 
 ```powershell
 python main.py
 ```
 
-Atau gunakan start.bat dengan mengklik ganda file tersebut.
+*Atau gunakan start.bat dengan mengklik ganda file tersebut.*
 
-Catatan: Untuk pengalaman terbaik, gunakan Windows Terminal (bukan CMD bawaan) karena dukungan warna dan Unicode lebih baik.
+**Catatan :** *Untuk pengalaman terbaik, gunakan Windows Terminal (bukan CMD bawaan) karena dukungan warna dan Unicode lebih baik.*
 
 ---
 
-3️⃣ Termux Android
+## 3️⃣ Termux Android
 
-Langkah 1: Buka Termux, perbarui paket.
+*Langkah 1:* Buka Termux, perbarui paket.
 
 ```bash
 pkg update && pkg upgrade -y
 pkg install python git -y
 ```
 
-Langkah 2: Clone repositori.
+*Langkah 2:* Clone repositori.
 
 ```bash
-git clone https://github.com/username/terminal-tools-suite.git
-cd terminal-tools-suite
+git clone https://github.com/123tool/ZENITH-TIME-OS-V2.git
+cd ZENITH-TIME-OS-V2
 ```
 
-Langkah 3: Instal dependensi.
+**Langkah 3:** Instal dependensi.
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Langkah 4: Jalankan.
+**Langkah 4:** Jalankan.
 
 ```bash
 python main.py
 ```
 
-Tips: Gunakan mode layar penuh Termux (geser dari atas, pilih Fullscreen) untuk pengalaman maksimal.
+**Tips :** *Gunakan mode layar penuh Termux (geser dari atas, pilih Fullscreen) untuk pengalaman maksimal.*
 
 ---
 
-🕹️ PANDUAN PENGGUNA
+## 🕹️ PANDUAN PENGGUNA
 
 Kontrol Keyboard Global
 
