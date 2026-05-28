@@ -1,0 +1,11 @@
+{
+    "theme": "matrix_green",
+    "clock_mode": "24",
+    "timezone": "local",
+    "animation_speed": 1.0,
+    "sound": true,
+    "fullscreen": true,
+    "auto_center": true,
+    "alarms": [],
+    "timers": []
+}
