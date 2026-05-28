@@ -1,20 +1,26 @@
-## TERMINAL TOOLS SUITE — FULLSCREEN ANIMATED CLI EDITION
+## ZENITH TIME OS TERMINAL V2
 
-Futuristic terminal tools with immersive fullscreen UI.
-Run `bash install.sh` then `bash start.sh`.
+- **Digital Clock** — 12/24 jam, efek *glow*, tanggal, animasi berkedip, mode fullscreen.
+- **Alarm** — Atur beberapa alarm, *snooze*, notifikasi suara + efek berkedip terminal.
+- **Stopwatch** — Presisi milidetik, catatan *lap*, animasi halus.
+- **Timer / Pewaktu** — Hitung mundur dengan *progress bar* animatif, mode Pomodoro.
+- **8 Tema Premium** — Matrix Green, Cyberpunk Neon, Vaporwave, Retro Amber, RGB Dynamic, dll.
+- **Fullscreen Engine** — Rendering penuh terminal, deteksi ukuran dinamis, layout responsif.
+- **Cross‑Platform** — Berjalan mulus di Linux, Windows (CMD, PowerShell), dan Termux Android.
+- **Animasi Sinematik** — Efek *pulse*, *scanline*, *CRT flicker*, border animatif.
 
-## Features
-- Digital Clock (12/24h, timezone, glowing effects)
-- Alarm (multiple alarms, sound/flash alert)
-- Stopwatch (milliseconds, laps)
-- Countdown Timer (progress bar, pomodoro ready)
-- 8 premium themes (Matrix, Cyberpunk, Vaporwave, ...)
-- Cross‑platform: Linux, Windows CMD/PowerShell, Termux
+---
 
-## Controls
-- Arrow keys to navigate
-- Q/ESC to go back or exit
-- Space to start/stop tools
+## 📥 INSTALASI
 
-## Screenshots
-(Add your own captures)
+### Prasyarat Umum
+- **Python 3.8+** (disarankan 3.12+)
+- **pip** (manajer paket Python)
+- **Terminal dengan dukungan warna 256** (Windows Terminal, GNOME Terminal, Termux, dll.)
+
+### 1️⃣ Linux (Ubuntu / Xubuntu / Kali Linux)
+
+**Langkah 1:** Clone repositori
+```bash
+git clone https://github.com/username/terminal-tools-suite.git
+cd terminal-tools-suite
