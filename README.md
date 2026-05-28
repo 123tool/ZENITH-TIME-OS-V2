@@ -22,5 +22,235 @@
 
 **Langkah 1:** Clone repositori
 ```bash
+git clone https://github.com/123tool/ZENITH-TIME-OS-V2.git
+cd ZENITH-TIME-OS-V2
+```
+Langkah 2: Jalankan installer otomatis
+
+```bash
+chmod +x install.sh
+bash install.sh
+```
+
+Installer akan mendeteksi OS, menginstal Python jika belum ada, lalu menginstal dependensi.
+
+Langkah 3: Luncurkan aplikasi
+
+```bash
+bash start.sh
+```
+
+Alternatif manual (jika installer gagal):
+
+```bash
+sudo apt update
+sudo apt install python3 python3-pip -y
+pip3 install -r requirements.txt
+python3 main.py
+```
+
+---
+
+2️⃣ Windows (CMD / PowerShell / Windows Terminal)
+
+Langkah 1: Pastikan Python sudah terinstal.
+
+· Unduh dari python.org (centang Add Python to PATH).
+· Buka Command Prompt atau PowerShell.
+
+Langkah 2: Clone atau unduh repositori, lalu masuk ke folder.
+
+```powershell
 git clone https://github.com/username/terminal-tools-suite.git
 cd terminal-tools-suite
+```
+
+Langkah 3: Instal dependensi.
+
+```powershell
+pip install -r requirements.txt
+```
+
+Langkah 4: Jalankan aplikasi.
+
+```powershell
+python main.py
+```
+
+Atau gunakan start.bat dengan mengklik ganda file tersebut.
+
+Catatan: Untuk pengalaman terbaik, gunakan Windows Terminal (bukan CMD bawaan) karena dukungan warna dan Unicode lebih baik.
+
+---
+
+3️⃣ Termux Android
+
+Langkah 1: Buka Termux, perbarui paket.
+
+```bash
+pkg update && pkg upgrade -y
+pkg install python git -y
+```
+
+Langkah 2: Clone repositori.
+
+```bash
+git clone https://github.com/username/terminal-tools-suite.git
+cd terminal-tools-suite
+```
+
+Langkah 3: Instal dependensi.
+
+```bash
+pip install -r requirements.txt
+```
+
+Langkah 4: Jalankan.
+
+```bash
+python main.py
+```
+
+Tips: Gunakan mode layar penuh Termux (geser dari atas, pilih Fullscreen) untuk pengalaman maksimal.
+
+---
+
+🕹️ PANDUAN PENGGUNA
+
+Kontrol Keyboard Global
+
+Tombol Aksi
+↑ ↓ Navigasi menu
+Enter Pilih / Konfirmasi
+Q / ESC Kembali ke menu / Keluar dari fullscreen
+Ctrl+C Keluar paksa (safe exit)
+
+Kontrol Spesifik Tiap Alat
+
+Digital Clock
+
+· M : Ubah mode 12/24 jam
+
+Alarm
+
+· A : Tambah alarm (masukkan format HH:MM)
+· Enter : Simpan alarm / Matikan alarm berbunyi
+· D : Hapus semua alarm
+
+Stopwatch
+
+· Spasi : Mulai / Jeda
+· L : Catat lap
+· R : Reset
+
+Timer
+
+· Spasi : Mulai / Jeda
+· S : Ubah durasi (siklus 30 detik)
+· R : Reset ke durasi semula
+
+---
+
+🎨 TEMA
+
+Delapan tema sinematik siap pakai, bisa diganti dari menu Themes.
+
+Nama Tema Suasana
+matrix_green Hijau ala Matrix, retro hacker
+cyberpunk_neon Cyan & magenta, neon futuristik
+minimal_white Putih bersih, elegan modern
+retro_amber Jingga CRT jadul
+rgb_dynamic Pelangi animatif RGB
+vaporwave Magenta-cyan, estetika synthwave
+hacker_red Merah darah, intens
+deep_blue Biru laut, tenang dan dalam
+
+Kustomisasi tema lanjutan dapat dilakukan dengan mengedit file config/settings.json.
+
+---
+
+📸 TANGKAPAN LAYAR
+
+Berikut adalah contoh tampilan aplikasi dalam berbagai mode.
+
+Menu Utama Digital Clock Stopwatch
+screenshots/menu.png screenshots/clock.png screenshots/stopwatch.png
+
+Alarm Timer Tema Vaporwave
+screenshots/alarm.png screenshots/timer.png screenshots/vaporwave.png
+
+Catatan: Letakkan tangkapan layar kamu di folder screenshots/ dan perbarui path gambar.
+
+---
+
+🛠️ TROUBLESHOOTING
+
+Masalah Umum
+
+1. Terminal tidak fullscreen / ukuran kacau
+
+· Pastikan menggunakan terminal yang mendukung alternate screen buffer (hampir semua terminal modern).
+· Resize terminal sebelum menjalankan, aplikasi akan otomatis menyesuaikan.
+
+2. Warna tidak muncul / kacau
+
+· Pastikan terminal mendukung 256 color atau true color.
+· Di Windows, gunakan Windows Terminal bukan cmd.exe lama.
+
+3. Error ModuleNotFoundError: No module named 'blessed'
+
+· Jalankan pip install -r requirements.txt kembali.
+· Di Termux, jika gagal, coba pip install blessed --no-cache-dir.
+
+4. Suara tidak berfungsi
+
+· Alarm menggunakan terminal bell (\a). Pastikan terminal kamu mengaktifkan bell/notifikasi suara.
+· Di Termux, suara bell biasanya tidak didukung; aplikasi akan tetap berjalan tanpa suara.
+
+5. Tombol tidak responsif di Termux
+
+· Gunakan kombinasi Volume Down + C untuk mensimulasikan Ctrl+C jika perlu.
+· Beberapa tombol fungsi mungkin perlu penekanan lebih lama.
+
+---
+
+🤝 KONTRIBUSI
+
+Kontribusi sangat diterima!
+Silakan lakukan fork repositori ini, buat branch fitur, dan ajukan pull request.
+
+Panduan singkat:
+
+1. Fork proyek.
+2. Buat branch fitur (git checkout -b fitur/namafitur).
+3. Commit perubahan (git commit -m 'Tambahkan fitur keren').
+4. Push ke branch (git push origin fitur/namafitur).
+5. Buka Pull Request.
+
+Untuk bug besar atau permintaan fitur, silakan buka Issue terlebih dahulu untuk diskusi.
+
+---
+
+⚖️ LISENSI
+
+Proyek ini dilisensikan di bawah MIT License.
+Bebas digunakan, dimodifikasi, dan didistribusikan.
+
+---
+
+🌐 KOMUNITAS & DUKUNGAN
+
+· GitHub Issues: Laporkan masalah
+· Pull Requests: Kirim peningkatan.
+
+Dibuat dengan ❤️ oleh komunitas terminal enthusiast.
+
+---
+
+<p align="center">
+  <strong>TERMINAL TOOLS SUITE</strong><br>
+  <sub>✨ FULLSCREEN ANIMATED CLI EDITION ✨</sub>
+</p>
+```
+
+---
